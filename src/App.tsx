@@ -1,9 +1,15 @@
 import Todos from "./components/Todos";
+import Todo from "./models/todo";
+
+const DUMMY_TODO: Todo[] = [
+    new Todo("Learn React"),
+    new Todo("Learn TypeScript"),
+];
 
 function App() {
     return (
         <div>
-            <Todos items={["Learn React", "Learn TypeScript"]} />
+            <Todos items={DUMMY_TODO} />
         </div>
     );
 }
